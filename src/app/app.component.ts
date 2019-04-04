@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'web-worker';
+
+  act() {
+    const worker = new Worker('./heavy-op.worker', { type: 'module' });
+    worker.onmessage = ({ data }) => {
+      console.log('page got message:', data);
+    };
+    worker.postMessage('hello');
+  }
 }
