@@ -4163,6 +4163,10 @@ postcss@7.0.14, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+prime-number@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/prime-number/-/prime-number-0.2.2.tgz#ff5d1972cd46189687bcf6eb1e26ca6b0a5dc89c"
+
 process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"

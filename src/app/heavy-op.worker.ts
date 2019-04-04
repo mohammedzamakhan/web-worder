@@ -1,4 +1,9 @@
+import isPrimeNumber from 'prime-number';
+import primeNumberList from 'prime-number/list';
+
 addEventListener('message', ({ data }) => {
-  const response = `worker response to ${data}`;
-  postMessage(response);
+  const arePrimeList = primeNumberList.map((prime) => {
+    return isPrimeNumber(prime);
+  });
+  postMessage(arePrimeList);
 });
